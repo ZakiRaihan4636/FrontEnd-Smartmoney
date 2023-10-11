@@ -22,35 +22,22 @@
             text-decoration: none;
         }
 
-        /* bagian foto background */
-         .main {
+        .main {
         width: 100%;
-        height: 700px;
-        background: linear-gradient(rgba(40, 67, 94, 0.6), rgba(40, 67, 94, 0.6)), url("backgroundEdukasi.png");
+        height: 800px;
+        background: linear-gradient(rgba(40, 67, 94, 0.6), rgba(40, 67, 94, 0.6)), url("aboutbg.png");
         background-size: cover;
         background-position: center;
         margin-bottom: 5%;
       }
 
+      .image-container{
+            width: 100%;
+            height: auto;
+            background: linear-gradient(rgba(40, 67, 94, 0.6), rgba(40, 67, 94, 0.6)), url("aboutbg.png");
+        }
 
-      .navbar{
-        width: 85%;
-        margin: auto;
-        padding: 35px 0;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-      }
 
-      /* bagian tulisan logo */
-      .logo {
-        color: white;
-        font-family: 'Poppins', sans-serif;
-        font-size: 18px;
-        margin-bottom: 1%;
-        margin-bottom: 1%;
-        font-weight: bold;
-      }
 
       /* bagian posisi tulisan navbar */
       .navbar ul li {
@@ -86,6 +73,16 @@
         font-weight: bolder;
       }
 
+      .headline h1 {
+        color: white; 
+        font-family: 'Poppins', sans-serif;
+        font-size: 50pt;
+        font-weight: bolder;
+        position: absolute;
+        top: 500%;
+        left: 50%;
+        transform: translate(-50%, 50%);
+        }
       /* posisi bagian keterangan */
       .ket * {
         display: inline-block; 
@@ -216,26 +213,22 @@
  <body>
     <!-- bagian navbar & main background -->
     <div class="main">
-        <div class="navbar">
-            <label class="logo">SMARTMONEY</label>
-            <ul>
-            <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Education</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Bookkeeping</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+      <div style="background-color: #203652;" class="navbar p-3">
+          <div class="logo text-light">SMARTMONEY</div>
+          <ul class="nav">
+          <li class="nav-item"><a class="nav-link text-light" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link text-light" href="#">Education</a></li>
+          <li class="nav-item"><a class="nav-link text-light" href="#">Bookkeeping</a></li>
+          <li class="nav-item"><a class="nav-link text-light" href="#">About</a></li>
           </ul>
           <div class="icon">
-            <a href="#"><img src="iconProfile.png" alt="icon" class="icon">
-              </a>
+              <img src="gg_profile.png" alt="icon">
+              <div class="headline"><h1>Edukasi</h1></div> 
           </div>
-        </div>  
-
-         <!-- bagian judul -->
-        <div class="judul">
-            <h1> EDUKASI</h1>
-        </div>   
+        </div>
+        <div class="image-container"> </div>
     </div>
-
+  
     <!-- bagian keterangan -->
     <div class="ket">
       <h1>Pembelajaran secara instan</h1>
@@ -250,10 +243,10 @@
 
     <!-- bagian kategori materi foto -->
     <div class="foto1">
-      <img src="kategorimateri.png"/>
-      <img src="kategorimateri.png"/>
-      <img src="kategorimateri.png"/>
-      <img src="kategorimateri.png"/>
+      <img src="materipic.png"/>
+      <img src="materipic.png"/>
+      <img src="materipic.png"/>
+      <img src="materipic.png"/>
     </div>
     <div class="button">
     <button class="btn btn-primary">Selengkapnya</button></div>
@@ -282,7 +275,7 @@
       <!-- card -->
       <div class="cardcontainer">
         <div class="card" style="width: 20rem; height: 35rem;">
-          <img src="orang1.png" class="card-img-top" alt="..." style="background-color: #909BA9; ">
+          <img src="user1.png" class="card-img-top" alt="..." style="background-color: #909BA9; ">
           <div class="card-body" style="background-color: #909BA9;">
             <h5 class="card-title" style="text-align: center;">Mahasiswa</h5>
             <p class="card-text">Kebiasaan saya adalah boros, dengan adanya aplikasi ini memudahkan aya untuk meninggalkan kebiasaan saya</p>
@@ -290,7 +283,7 @@
           </div>
         </div>
         <div class="card" style="width: 20rem; height: 35rem;">
-          <img src="orang2.png" class="card-img-top" alt="..." style="background-color: #909BA9; ">
+          <img src="user2.png" class="card-img-top" alt="..." style="background-color: #909BA9; ">
           <div class="card-body" style="background-color: #909BA9;">
             <h5 class="card-title" style="text-align: center;">Karyawan</h5>
             <p class="card-text">Saya sangat sibuk sehingga pengingat sangat membantu saya dalam mengelola keuangan pribadi saya</p>
@@ -298,7 +291,7 @@
           </div>
         </div>
         <div class="card" style="width: 20rem; height: 35rem;">
-          <img src="orang3.png" class="card-img-top" alt="..." style="background-color: #909BA9; ">
+          <img src="user3.png" class="card-img-top" alt="..." style="background-color: #909BA9; ">
           <div class="card-body" style="background-color: #909BA9;">
             <h5 class="card-title" style="text-align: center;">Ibu Rumah Tangga</h5>
             <p class="card-text">Sangat membantu saya, terutama saya tidak mengetahui dasar-dasar pengelolaan uangnya</p>
@@ -323,13 +316,13 @@
       </div>
       <div class="social-icons">
           <a href="#" class="social-icon">
-              <img src="skill-icons_instagram.png" alt="instagram">
+              <img src="igpng.png" alt="instagram">
           </a>
           <a href="#" class="social-icon">
-              <img src="logos_facebook.png" alt="facebook">
+              <img src="facebook.png" alt="facebook">
           </a>
           <a href="#" class="social-icon">
-            <img src="skill-icons_linkedin.png" alt="linkedin">
+            <img src="linkedin.png" alt="linkedin">
         </a>
       </div>
       
