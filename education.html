@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SMARTMONEY</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Open+Sans:wght@300;400;600;700&family=Poppins:wght@100;200&family=Ubuntu:wght@500;700&display=swap" rel="stylesheet">
+    <style>
+        /* margin, padding keseluruhan page */
+        *{
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+        }
+
+        /* bagian foto background */
+         .main {
+        width: 100%;
+        height: 700px;
+        background: linear-gradient(rgba(40, 67, 94, 0.6), rgba(40, 67, 94, 0.6)), url("backgroundEdukasi.png");
+        background-size: cover;
+        background-position: center;
+      }
+
+
+      .navbar{
+        width: 85%;
+        margin: auto;
+        padding: 35px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      /* bagian tulisan logo */
+      .logo {
+        color: white;
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
+        margin-bottom: 1%;
+        margin-bottom: 1%;
+        font-weight: bold;
+      }
+
+      /* bagian posisi tulisan navbar */
+      .navbar ul li {
+        list-style: none;
+        display: inline-block;
+        margin: 0 20px; 
+      }
+
+      /* bagian editing tulisan navbar */
+      .navbar ul li a {
+        color: white;
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
+        text-transform: uppercase;
+      }
+
+      /* bagian icon */
+      .icon{
+       width: 30px;
+       height: 30px;
+      }
+
+      /* bagian judul */
+      .judul h1{
+        color: white;
+        display: flex;
+        justify-content: flex-end; 
+        align-items: center; 
+        font-family: 'Poppins', sans-serif;
+        font-size: 50pt;
+        margin-right: 20%;
+        margin-top: 12%;
+        font-weight: bold;
+      }
+
+    </style>
+ <body>
+    <!-- bagian navbar & main background -->
+    <div class="main">
+        <div class="navbar">
+            <label class="logo">SMARTMONEY</label>
+            <ul>
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Education</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Bookkeeping</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+          </ul>
+          <div class="icon">
+            <a href="#"><img src="iconProfile.png" alt="icon" class="icon">
+              </a>
+          </div>
+        </div>  
+
+         <!-- bagian judul -->
+        <div class="judul">
+            <h1> EDUKASI</h1>
+        </div>   
+    </div>
+
+   
+
+
+    <!-- /script boostrap js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
