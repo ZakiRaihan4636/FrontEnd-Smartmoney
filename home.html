@@ -65,26 +65,6 @@
       text-transform: uppercase;
     }
 
-    .button1 {
-      color: white;
-      border: none;
-      font-weight: bold;
-      padding: 5px 15px;
-      border-radius: 30px;
-      transition: .5s;
-      background-color: #203652;
-    }
-
-    .button2 {
-      color: white;
-      border: none;
-      font-weight: bold;
-      padding: 5px 15px;
-      border-radius: 30px;
-      transition: .5s;
-      background-color: #203652;
-    }
-
     /* bagian icon */
     .icon {
       width: 30px;
@@ -116,7 +96,7 @@
       position: relative;
     }
 
-    .klikButton {
+    button {
       color: white;
       border: none;
       font-weight: bold;
@@ -219,7 +199,6 @@
     }
 
     .footer {
-      width: 100%;
       margin-top: 5%;
       background-color: #203652;
       text-align: center;
@@ -231,6 +210,33 @@
       justify-content: space-between;
       align-items: center;
     }
+
+    .footer h5 {
+
+      margin-left: 30%;
+      /* Atur jarak antara "SMARTMONEY" dan hak cipta */
+      text-align: left;
+      margin-left: 10px;
+      font-size: small;
+      font-family: 'Poppins', sans-serif;
+      margin-top: 1%;
+    }
+
+    /* bagian menu footer */
+    .footer .list ul li {
+      list-style: none;
+      display: inline-block;
+      margin: 0 20px;
+      color: white;
+      font-family: 'Poppins', sans-serif;
+      font-size: 18px;
+      text-transform: uppercase;
+      margin-top: 3%;
+    }
+
+    .footer .social-icons {
+      margin: 0 20px;
+    }
   </style>
 
 <body>
@@ -240,14 +246,10 @@
       <label class="logo">SMARTMONEY</label>
       <ul>
         <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="edukasi.html">Education</a></li>
+        <li class="nav-item"><a class="nav-link" href="edukasi2.html">Education</a></li>
         <li class="nav-item"><a class="nav-link" href="#">Bookkeeping</a></li>
-        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="about2.html">About</a></li>
       </ul>
-      <div class="button">
-        <a href="login.html"><button class="button1">Login</button></a>
-        <a href="register.html"><button class="button2">SignUp</button></a>
-      </div>
       <div class="icon">
         <a href="setting.html"><i class="fa-regular fa-user" style="color: #ffffff;"></i>
         </a>
@@ -257,10 +259,9 @@
     <!-- bagian judul -->
     <div class="judul">
       <h1>Selamat Datang</h1>
-      <p>Kami hadir untuk membantu Anda mengelola keuangan pribadi Anda dengan lebih efektif dan cerdas. Yuk
-        kujnjungi
+      <p>Kami hadir untuk membantu Anda mengelola keuangan pribadi Anda dengan lebih efektif dan cerdas. Yuk kujnjungi
         website kami</p>
-      <a href="dashboard.html"><button class="klikButton">Lengkapi Data Diri Anda ></button></a>
+      <a href="dashboard.html"><button>Lengkapi Data Diri Anda ></button></a>
     </div>
   </div>
 
@@ -277,10 +278,9 @@
           <div class="col">
             <img class="gambar" src="assets/konten1.jpeg" alt="">
           </div>
-          <div class="col">  
+          <div class="col">
             <h2>Menjadikan Keuangan Anda Stabil</h2>
-            <p class="teks">Penggunaan webite ini akan membantu anda untuk mengatur pengelolaan keuangan
-              anda menjadi
+            <p class="teks">Penggunaan webite ini akan membantu anda untuk mengatur pengelolaan keuangan anda menjadi
               lebih teratur dan
               stabil</p>
           </div>
@@ -292,8 +292,8 @@
         <div class="row align-items-center">
           <div class="col">
             <h2>Menghemat Uang Anda dengan Cerdas</h2>
-            <p class="teks">Penghematan sangat penting loh, terutama yang memang punya riwayat boros, jadi
-              bakal ngebantu banget</p>
+            <p class="teks">Penghematan sangat penting loh, terutama yang memang punya riwayat boros, jadi bakal
+              ngebantu banget</p>
           </div>
           <div class="col">
             <img class="gambar" src="assets/konten2.jpg" alt="">
@@ -309,8 +309,7 @@
           </div>
           <div class="col">
             <h2>Memberikan Edukasi yang Menarik </h2>
-            <p class="teks">Fitur edukasi yang membantu pengguna menjadi lebih mengerti tentang pengelolaan
-              keuangan
+            <p class="teks">Fitur edukasi yang membantu pengguna menjadi lebih mengerti tentang pengelolaan keuangan
               yang baik dan benar</p>
           </div>
         </div>
@@ -337,7 +336,14 @@
   <div class="footer">
     <h5 class="card-title">SMARTMONEY<br> &copy; 2023 SmartMoney</h5>
 
-
+    <div class="list">
+      <ul>
+        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Education</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Bookkeeping</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+      </ul>
+    </div>
     <div class="social-icons">
       <a href="#" class="social-icon">
         <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
